@@ -171,11 +171,6 @@ function drawlama(x,y,s){
   push()
   translate(x,y)
   scale(s)
-
-<<<<<<< HEAD
-  
-=======
->>>>>>> 415db59d03026f9424ca0b9e9d27353f8242f06a
   //lama
     noStroke()
     fill(145, 120, 100)
@@ -277,14 +272,9 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
     push();
     fill(100,100,255);
     rect(-50,-100,100,200,10,10,10,10)
-<<<<<<< HEAD
     pop();
   creature();
   //left arm  
-=======
-
-  //left arm
->>>>>>> 415db59d03026f9424ca0b9e9d27353f8242f06a
   push();
       fill(100,100,255); //blue
       translate(-50,-85)
@@ -364,9 +354,7 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
           rect(0,0,20,30,10,10,10,10)
         pop();
       pop();
-    pop();
-<<<<<<< HEAD
-    
+    pop();    
   pop() 
 }
 
@@ -466,8 +454,3 @@ function updateBack ()
         
     }
 }
-=======
-
-  pop()
-}
->>>>>>> 415db59d03026f9424ca0b9e9d27353f8242f06a
