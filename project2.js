@@ -100,13 +100,13 @@ push();
 function updatespit(){
   spitx += 1.2
   spity += 0.5
-  
+
   if (spitx >= 650){
     spitx = -130;
     spity = 300;
     scene = 2;
   }
-  
+
   if (spitx >= 350 && scene == 2){
       spitx = 625
       spity = 525
@@ -144,13 +144,13 @@ function updatelama()
   }else if(br <= -0.5){
     lamaflag = false
   }
-  
+
   if (lamaflag){
     dr = -0.01
   }else{
     dr = 0.01
   }
-  
+
   if (lamax >= 350){
     lamax = 350
     dr = 0
@@ -172,7 +172,10 @@ function drawlama(x,y,s){
   translate(x,y)
   scale(s)
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> 415db59d03026f9424ca0b9e9d27353f8242f06a
   //lama
     noStroke()
     fill(145, 120, 100)
@@ -242,19 +245,19 @@ function updateHuman(){
   lh -= 2*dr;
   rhe += dr;
   lhe += dr;
-  
+
   if (rl >= 0.75){
     legflag = true
   }else if(rl <= 0){
     legflag = false
   }
-  
+
   if (legflag){
     dr = -0.01
   }else{
     dr = 0.01
   }
-  
+
   if(x >= 250){
     rot += 0.01;
     y += 1
@@ -274,9 +277,14 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
     push();
     fill(100,100,255);
     rect(-50,-100,100,200,10,10,10,10)
+<<<<<<< HEAD
     pop();
   creature();
   //left arm  
+=======
+
+  //left arm
+>>>>>>> 415db59d03026f9424ca0b9e9d27353f8242f06a
   push();
       fill(100,100,255); //blue
       translate(-50,-85)
@@ -297,8 +305,8 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
         pop();
       pop();
     pop();
-  
-    
+
+
     // right arm
     push();
       translate(50,-85)
@@ -321,7 +329,7 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
         pop();
       pop();
     pop();
-  
+
     // left leg
     push();
       fill('#402A12');
@@ -339,7 +347,7 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
         pop();
       pop();
     pop();
-    
+
     // right leg
     push();
     fill('#402A12');
@@ -350,13 +358,14 @@ function human(x,y,rot,rh,rhe,lh,lhe,rl,rlk,rr,rrk){
         translate(0,50)
         rotate(llk)
         rect(0,0,20,50,5,5,5,5)
-        push();   
+        push();
           translate(0,50)
           fill(0);
           rect(0,0,20,30,10,10,10,10)
         pop();
       pop();
     pop();
+<<<<<<< HEAD
     
   pop() 
 }
@@ -457,3 +466,8 @@ function updateBack ()
         
     }
 }
+=======
+
+  pop()
+}
+>>>>>>> 415db59d03026f9424ca0b9e9d27353f8242f06a
